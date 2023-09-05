@@ -26,8 +26,12 @@ public class Main {
             response = sc.next();
 
             switch (response) {
-                case "C", "c" : ControllerClienti.controller(con);
-                case "M", "m" : ControllerMovimento.controller(con);
+                case "C", "c" :
+                    ControllerClienti.controller(con);
+                    break;
+                case "M", "m" :
+                    ControllerMovimento.controller(con);
+                    break;
             }
 
         }catch(ClassNotFoundException | InputMismatchException | SQLException e){
